@@ -13,26 +13,27 @@ Bu proje, yıldızların Bp−Rp renk indeksi ile etkin sıcaklıklarının (Tef
 
 ---
 ## Proje Amacı
-Bp−Rp renk indeksi ve Teff arasındaki ilişkiyi modellemek.
-Farklı polinom dereceleri ve α/λ parametreleriyle Bayesian Ridge’i test etmek.
-MCMC ile belirsizlikleri hesaplamak.
-Yeni veri kümelerinde (ör. kumeler2_bprp.txt, variable_members.dat, UPK_220.gaia) modelin genellenebilirliğini incelemek. Gerekli veri dosyaları StarFinal repository'sinde bulunmaktadır.
+- Bp−Rp renk indeksi ve Teff arasındaki ilişkiyi modellemek.  
+- Farklı polinom dereceleri ve α/λ parametreleriyle Bayesian Ridge’i test etmek.  
+- MCMC ile belirsizlikleri hesaplamak.  
+- Yeni veri kümelerinde (`kumeler2_bprp.txt`, `variable_members.dat`, `UPK_220.gaia`) modelin genellenebilirliğini incelemek. Gerekli dosyalar StarFinal repository' si altında bulunmaktadır.
+
 ---
 ## Kullanılan Yöntemler
-Bayesian Ridge Regression → α, λ başlangıç değerleri denenerek en uygun model seçildi.
-Polinomsal Özellikler (Vandermonde) → renk indeksi için polinom tabanlı özellikler üretildi.
-MCMC (NumPyro + NUTS) → posterior dağılımlar örneklenip tahminler ±1σ belirsizlik ile sunuldu.
-Karşılaştırma → R², MAE, MSE, RMSE metrikleri hesaplandı.
+- **Bayesian Ridge Regression** → α, λ başlangıç değerleri denenerek en uygun model seçildi.  
+- **Polinomsal Özellikler (Vandermonde)** → renk indeksi için polinom tabanlı özellikler üretildi.  
+- **MCMC (NumPyro + NUTS)** → posterior dağılımlar örneklenip tahminler ±1σ belirsizlik ile sunuldu.  
+- **Karşılaştırma** → R², MAE, MSE, RMSE metrikleri hesaplandı.  
 ---
 ## Veri Setleri
 Projede kullanılan ana ve ek dosyalar:
-spec_table.d → Ana eğitim verisi (Teff, Bp−Rp).
-kumeler2_bprp.txt, kümeler_(bp-rp)_(bp-rp)0=.txt → Küme verileri.
-variable_members.dat, UPK_220.gaia → Ek test verileri.
+- `spec_table.d` → Ana eğitim verisi (Teff, Bp−Rp).  
+- `kumeler2_bprp.txt`, `kümeler_(bp-rp)_(bp-rp)0=.txt` → Küme verileri.  
+- `variable_members.dat`, `UPK_220.gaia` → Ek test verileri. 
 ---
 ## Kurulum ve Çalıştırma
-Gerekli kütüphaneleri yüklemek için: pip install numpy pandas matplotlib scikit-learn jax jaxlib numpyro arviz corner graphviz
-Colab’da çalıştırmak için dosyaları yükleyip notebook’u açın dosyaları adlarına uygun yükleyin.
+- Gerekli kütüphaneleri yüklemek için: pip install numpy pandas matplotlib scikit-learn jax jaxlib numpyro arviz corner graphviz
+- Colab’da çalıştırmak için dosyaları yükleyip notebook’u açın dosyaları adlarına uygun yükleyin.
 ---
 ## Kod Yapısı
 Notebook içindeki ana adımlar:
