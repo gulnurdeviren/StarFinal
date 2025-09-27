@@ -3,12 +3,12 @@
 Bu proje, yıldızların Bp−Rp renk indeksi ile etkin sıcaklıklarının (Teff) tahmin edilmesi üzerine kuruludur. Hem Bayesian Ridge Regression hem de MCMC (Markov Chain Monte Carlo, NumPyro/NUTS) yöntemleri kullanılarak modeller oluşturulmuş, farklı veri kümeleri üzerinde test edilmiştir.
 ---
 ##  İçindekiler:
-- [Proje Amacı](#-proje-amacı)  
-- [Kullanılan Yöntemler](#-kullanılan-yöntemler)  
-- [Veri Setleri](#-veri-setleri)  
-- [Kurulum ve Çalıştırma](#️-kurulum-ve-çalıştırma)  
-- [Kod Yapısı](#-kod-yapısı)  
-- [Sonuçlar](#-sonuçlar) 
+-Proje Amacı 
+-Kullanılan Yöntemler 
+-Veri Setleri 
+-Kurulum ve Çalıştırma 
+-Kod Yapısı 
+-Sonuçlar
 ---
 ## -> Proje Amacı
 Bp−Rp renk indeksi ve Teff arasındaki ilişkiyi modellemek.
